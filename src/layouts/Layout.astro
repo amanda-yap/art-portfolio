@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css'
 import Nav from '../components/Nav.astro'
+import Footer from '../components/Footer.astro'
 ---
 
 <!doctype html>
@@ -19,6 +20,7 @@ import Nav from '../components/Nav.astro'
 		<main class="flex-auto mt-6 flex flex-col px-2">
 			<Nav />
 			<slot></slot>
+			<Footer />
 		</main>
 	</body>
 </html>
