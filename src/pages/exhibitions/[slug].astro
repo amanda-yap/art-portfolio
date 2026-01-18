@@ -13,9 +13,13 @@ export async function getStaticPaths() {
 const { exhibition } = Astro.props;
 ---
 <Layout>
-    <main class="max-w-5xl mx-auto p-6">
+    <main class="mx-auto p-6">
 		<h1 class="text-3xl font-semibold mb-4 mt-4">{exhibition.title}</h1>
-		<a href="/" class="mt-3 inline-block underline">Back to exhibitions</a>
+		<h3 class="italic text-stone-600">{exhibition.location}</h3>
+		<h3 class="text-stone-600">{exhibition.date}</h3>
+
+		<a href="/" class="mt-4 inline-block underline">Go back</a>
+
 		<p class="mt-6 mb-6 text-stone-700">{exhibition.description}</p>
 
 		<div class="grid gap-4 grid-cols-1 md:grid-cols-2">

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --font-main: 'Inter', sans-serif;
+  --font-main: "Zalando Sans", sans-serif;
 }
 
 body {

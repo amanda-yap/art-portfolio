@@ -1,9 +1,9 @@
 export const exhibitions = [
   {
-    slug: 'modern-visions',
-    title: 'Modern Visions',
+    slug: 'blue',
+    title: 'Blue',
     location: 'Art Gallery',
-    description: 'A journey through contemporary art forms.',
+    description: 'Blue art.',
     date: 'January 2025',
     images: [
       { src: '/images/modern1.jpg', description: 'Oil paint' },
@@ -24,10 +24,10 @@ export const exhibitions = [
     ],
   },
   {
-    slug: 'urban-expressions',
-    title: 'Urban Expressions',
+    slug: 'vast-lands',
+    title: 'Vast Lands',
     location: 'Art Stead',
-    description: 'Art inspired by city life.',
+    description: 'Portraying the vast plains through paint.',
     date: 'January 2026',
     images: [
       { src: '/images/urban1.jpg', description: 'Oil paint' },
