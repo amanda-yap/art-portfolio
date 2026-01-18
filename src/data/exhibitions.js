@@ -1,3 +1,14 @@
+import modern1 from '../assets/modern1.jpg'
+import modern2 from '../assets/modern2.jpg'
+import modern3 from '../assets/modern3.jpg'
+import nature1 from '../assets/nature1.jpg'
+import nature2 from '../assets/nature2.jpg'
+import nature3 from '../assets/nature3.jpg'
+import urban1 from '../assets/urban1.jpg'
+import urban2 from '../assets/urban2.jpg'
+import urban3 from '../assets/urban3.jpg'
+
+
 export const exhibitions = [
   {
     slug: 'blue',
@@ -6,9 +17,9 @@ export const exhibitions = [
     description: 'Blue art.',
     date: 'January 2025',
     images: [
-      { src: '/images/modern1.jpg', description: 'Oil paint' },
-      { src: '/images/modern2.jpg', description: 'Also oil paint' },
-      { src: '/images/modern3.jpg', description: 'Guess what this is' }
+      { src: modern1, description: 'Oil paint' },
+      { src: modern2, description: 'Also oil paint' },
+      { src: modern3, description: 'Guess what this is' }
     ],
   },
   {
@@ -18,9 +29,9 @@ export const exhibitions = [
     description: 'Exploring the beauty of natural landscapes.',
     date: 'July 2025',
     images: [
-      { src: '/images/nature1.jpg', description: 'Oil paint' },
-      { src: '/images/nature2.jpg', description: 'Also oil paint' },
-      { src: '/images/nature3.jpg', description: 'Guess what this is' }
+      { src: nature1, description: 'Oil paint' },
+      { src: nature2, description: 'Also oil paint' },
+      { src: nature3, description: 'Guess what this is' }
     ],
   },
   {
@@ -30,9 +41,9 @@ export const exhibitions = [
     description: 'Portraying the vast plains through paint.',
     date: 'January 2026',
     images: [
-      { src: '/images/urban1.jpg', description: 'Oil paint' },
-      { src: '/images/urban2.jpg', description: 'Also oil paint' },
-      { src: '/images/urban3.jpg', description: 'Guess what this is' }
+      { src: urban1, description: 'Oil paint' },
+      { src: urban2, description: 'Also oil paint' },
+      { src: urban3, description: 'Guess what this is' }
     ],
   },
 ];

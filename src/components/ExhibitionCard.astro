@@ -1,14 +1,16 @@
 ---
 const { title, slug, cover, date, location } = Astro.props;
+import { Image } from 'astro:assets';
 ---
 
 <a href={`/exhibitions/${slug}`} class="block">
     <div class="aspect-[1.3] w-80">
         <div class="relative w-full h-full group overflow-hidden">
-            <img
+            <Image
                 src={cover.src}
                 alt={title}
                 class="w-full h-full object-cover object-center"
+                loading="lazy"
             />
 
             <div
