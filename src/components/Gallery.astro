@@ -1,0 +1,17 @@
+---
+import ExhibitionCard from '../components/ExhibitionCard.astro';
+import { exhibitions } from '../data/exhibitions';
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto mt-8">
+    {exhibitions.map(exhibition => (
+        <ExhibitionCard
+            title={exhibition.title}
+            slug={exhibition.slug}
+            cover={exhibition.images[0]} 
+            description={exhibition.description}
+            date={exhibition.date}
+            location={exhibition.location}
+        />
+    ))}
+</div>

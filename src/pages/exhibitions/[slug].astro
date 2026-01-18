@@ -1,0 +1,36 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { exhibitions } from '../../data/exhibitions';
+
+export async function getStaticPaths() {
+	// Map each exhibition to a path
+	return exhibitions.map(ex => ({
+		params: { slug: ex.slug },
+		props: { exhibition: ex } 
+	}));
+}
+
+const { exhibition } = Astro.props;
+---
+<Layout>
+    <main class="max-w-5xl mx-auto p-6">
+		<h1 class="text-3xl font-semibold mb-4 mt-4">{exhibition.title}</h1>
+		<a href="/" class="mt-3 inline-block underline">Back to exhibitions</a>
+		<p class="mt-6 mb-6 text-stone-700">{exhibition.description}</p>
+
+		<div class="grid gap-4 grid-cols-1 md:grid-cols-2">
+			{exhibition.images.map((image) => (
+				<div class="flex flex-col">
+					<img
+						src={image.src}
+						alt={exhibition.title}
+						class="w-full"
+					/>
+					<p class="mt-2 text-sm text-stone-400">
+						{image.description}
+					</p>
+				</div>
+			))}
+		</div>
+    </main>
+</Layout>

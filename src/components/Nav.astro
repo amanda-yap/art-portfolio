@@ -2,7 +2,6 @@
 const links = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Work", href: "/work" },
   { name: "Contact", href: "/contact" },
 ];
 ---
@@ -10,12 +9,12 @@ const links = [
 <nav class="text-stone-900 relative">
     <div class="max-w-3xl mx-auto px-4 py-4 flex items-center justify-between">
         <a href="/" class="text-xl font-bold">
-            art portfolio
+            Sophie Drury
         </a>
 
         <button
             id="nav-open"
-            class="md:hidden text-2xl focus:outline-none"
+            class="md:hidden text-2xl focus:outline-none cursor-pointer"
             aria-label="Open menu"
             aria-expanded="false"
         >
@@ -36,13 +35,14 @@ const links = [
     <div
         id="nav-overlay"
         class="fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition-opacity md:hidden"
-    ></div>
+    >
+    </div>
 
     <aside
         id="mobile-nav"
-        class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg
+        class="fixed top-0 right-0 h-full w-full bg-white shadow-lg
             translate-x-full transition-transform duration-300
-            md:hidden"
+            md:hidden z-50"
     >
  
         <div class="flex justify-between items-center p-6">
@@ -57,7 +57,7 @@ const links = [
         </div>
             
 
-        <ul class="flex flex-col gap-4 p-2 ml-4 text-stone-500">
+        <ul class="flex flex-col gap-8 p-2 ml-4 text-stone-500 items-center">
         {links.map(link => (
             <li>
                 <a
