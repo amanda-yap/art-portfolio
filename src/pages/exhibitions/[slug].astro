@@ -16,9 +16,9 @@ const { exhibition } = Astro.props;
 <Layout>
     <main class="mx-auto p-2 lg:p-6">
 		<h1 class="text-3xl font-semibold mb-4 mt-4">{exhibition.title}</h1>
-		<h3 class="italic text-stone-600">{exhibition.location}</h3>
-		<h3 class="text-stone-600">{exhibition.date}</h3>
-		<p class="mt-6 mb-6 text-stone-700">{exhibition.description}</p>
+		<h3 class="italic">{exhibition.location}</h3>
+		<h3>{exhibition.date}</h3>
+		<p class="mt-6 mb-6">{exhibition.description}</p>
 
 		<div class="grid gap-4 grid-cols-1 md:grid-cols-2">
 			{exhibition.images.map((image) => (
@@ -28,7 +28,7 @@ const { exhibition } = Astro.props;
 						alt={exhibition.title}
 						class="w-full"
 					/>
-					<p class="mt-2 text-sm text-stone-400">
+					<p class="mt-2 text-sm">
 						{image.description}
 					</p>
 				</div>

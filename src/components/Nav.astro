@@ -6,9 +6,9 @@ const links = [
 ];
 ---
 
-<nav class="text-stone-900 relative">
+<nav class="relative">
     <div class="mx-auto py-4 flex items-center justify-between">
-        <a href="/" class="text-xl font-bold">
+        <a href="/" class="text-xl font-bold" id="logo">
             Sophie Drury
         </a>
 
@@ -21,10 +21,10 @@ const links = [
             ☰
         </button>
 
-        <ul class="hidden md:flex gap-6 text-stone-500">
+        <ul class="hidden md:flex gap-6">
             {links.map(link => (
                 <li>
-                    <a href={link.href} class="hover:text-stone-900">
+                    <a href={link.href}>
                         {link.name}
                     </a>
                 </li>
@@ -40,7 +40,7 @@ const links = [
 
     <aside
         id="mobile-nav"
-        class="fixed top-0 right-0 h-full w-full bg-white shadow-lg
+        class="fixed top-0 right-0 h-full w-full shadow-lg
             translate-x-full transition-transform duration-300
             md:hidden z-50"
     >
@@ -49,7 +49,7 @@ const links = [
             <span></span>
             <button
                 id="nav-close"
-                class="text-2xl cursor-pointer text-stone-900"
+                class="text-2xl cursor-pointer"
                 aria-label="Close menu"
             >
                 ✕
@@ -57,12 +57,12 @@ const links = [
         </div>
             
 
-        <ul class="flex flex-col gap-12 p-2 ml-4 text-stone-500 items-center">
+        <ul class="flex flex-col gap-12 p-2 ml-4 items-center">
         {links.map(link => (
             <li>
                 <a
                     href={link.href}
-                    class="block text-2xl hover:text-stone-900"
+                    class="block text-2xl"
                 >
                     {link.name}
                 </a>

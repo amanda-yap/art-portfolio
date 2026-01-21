@@ -1,9 +1,27 @@
 @import "tailwindcss";
 
 :root {
-  --font-main: "Zalando Sans", sans-serif;
+ 	--font-main: "Arimo", sans-serif;
+	--font-logo: "UnifrakturMaguntia", cursive;
+	--color-base: #faffeb;
+	--color-highlights: #e8f2c9;
+	--color-font: "14 18 1";
 }
 
 body {
-  font-family: var(--font-main);
+	font-family: var(--font-main);
+	background-color: var(--color-base);
+	color: var(--color-font);
+}
+
+#logo {
+	font-family: var(--font-logo);
+}
+
+#highlights {
+	background-color: var(--color-highlights);
+}
+
+#mobile-nav {
+	background-color: var(--color-base);
 }
